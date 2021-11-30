@@ -1,24 +1,12 @@
-// Create an integer variable for homeTemp
-
-function getWeather(city, callback) {
-    var url = 'http://api.openweathermap.org/data/2.5/weather';
-    $.ajax({
-      dataType: "jsonp",
-      url: url,
-      jsonCallback: 'jsonp',
-      data: { q: city },
-      cache: false,
-      success: function (data) {
-        callback(data.main.temp);
-        console.log(getWeather);
-      }
-    });
-  }
-  
-// Create a string variable for homeCity
-// Create a list of exotic locales for exoticCity
-// Match exoticCity with a integer variable of exoticTemp
-// Ask the user "Where do you live?" and put answer for homeCity
-// Create a function where homeCity pulls homeTemp from API
-// Tell user "In " homeCity " it is currently " homeTemp
-// Tell user "In " exoticCity " it is currently " exoticTemp
+// Ask the user "What temperature is it?"
+// Create an integer variable for temperature
+// Ask user "What temperature is it?" and put answer in temperature
+function temperature(num) {
+    const questionVal = Number (document.getElementById('question').value);
+    console.log(questionVal);
+} 
+// IF temperature is <78, return hotOptions
+// IF temperature is <65, return coolOptions
+// ELSE return coldOptions
+// Turn whichever return into options
+// Tell user "You should look at" options
