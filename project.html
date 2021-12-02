@@ -21,10 +21,14 @@
 <label for="question">Hello!<br>
          What's the temperature where you are now? :)<br></label>
         <input type="number" id="question" name="tempQuestion"><br>
-        <button onclick="temperature()">Send!</button>
+        <button id="button" class="button">Send!</button>
     </div>
 
-    <div class="options">Maybe you should buy one of these?</div>
+    <div class="options">Maybe you should buy one of these?
+        <div id="hotOptions" class="hidden">hot</div>
+        <div id="coolOptions" class="hidden">cool</div>
+        <div id="coldOptions" class="hidden">cold</div>
+    </div>
         <script src="project.js"></script> 
     </body>
 </html>

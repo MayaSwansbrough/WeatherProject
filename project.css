@@ -45,3 +45,8 @@ input {
     border-width: 2px;
     border-color: slateblue;
     border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
