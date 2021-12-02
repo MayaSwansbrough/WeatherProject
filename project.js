@@ -5,11 +5,24 @@ button.addEventListener("click", temperature);
 function temperature(num) {
     const questionVal = Number (document.getElementById('question').value);
     console.log(questionVal);
+    if (questionVal >= 78) {
+        document.getElementById('hotOptions').style.display = "block";
+        document.getElementById('coolOptions').style.display = "none";
+        document.getElementById('coldOptions').style.display = "none";
+    }
+    else if (questionVal <=77 && questionVal >=60) {
+        document.getElementById('hotOptions').style.display = "none";
+        document.getElementById('coolOptions').style.display = "block";
+        document.getElementById('coldOptions').style.display = "none";
+    }
+    else if (questionVal <=60) {
+        document.getElementById('hotOptions').style.display = "none";
+        document.getElementById('coolOptions').style.display = "none";
+        document.getElementById('coldOptions').style.display = "block";
+    }
 }
 // IF temperature is <78, return hotOptions
-if (questionVal >=78) {
-    
-}
+
 // IF temperature is <65, return coolOptions
 // ELSE return coldOptions
 // Turn whichever return into options
