@@ -1,17 +1,53 @@
-body {
-    background-color: silver;
-    color: black;
-    font-family: Arial;
-    font-size: 12px;
+* {
+    margin: 0px;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
-h1 {
-    background-color: slateblue;
+body {
+    background-color: #fff;
+    color: #444444;
+}
+
+#topBar {
+    background-color: #FA3C00;
     color: white;
-    font-family: Georgia;
-    font-size: 40px;
-    text-align: center;
+}
+
+#topBar span {
+    margin-left: 200px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav {
+    font-size: 18px;
+    font-weight: bold;
     border-radius: 15px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav img {
+    height: 100px;
+}
+
+#navLinks {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+li {
+    padding-left: 70px;
+    margin: 20px 20px 0  20px;
 }
 
 .question {
