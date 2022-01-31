@@ -1,9 +1,12 @@
 // Show an error if text input is not a number
 // Ask user "What temperature is it?" and put answer in temperature
+const resetButton = document.getElementById("resetButton");
+
 button.addEventListener("click", temperature);
+resetButton.addEventListener("click", reset);
 
 function temperature(num) {
-    const questionVal = Number (document.getElementById('question').value);
+    let questionVal = Number (document.getElementById('question').value);
     console.log(questionVal);
     if (questionVal >= 78) {
         document.getElementById('hotOptions').style.display = "block";
@@ -20,6 +23,14 @@ function temperature(num) {
         document.getElementById('coolOptions').style.display = "none";
         document.getElementById('coldOptions').style.display = "block";
     }
+}
+
+function reset() {
+    let questionVal = Number (document.getElementById('question').value);
+    document.getElementById('hotOptions').style.display = "none";
+    document.getElementById('coolOptions').style.display = "none";
+    document.getElementById('coldOptions').style.display = "none";
+    questionVal.value = "";
 }
 // IF temperature is <78, return hotOptions
 
