@@ -26,7 +26,7 @@ function temperature(num) {
 }
 
 function reset() {
-    let questionVal = Number (document.getElementById('question').value);
+    let questionVal = document.getElementById('question');
     document.getElementById('hotOptions').style.display = "none";
     document.getElementById('coolOptions').style.display = "none";
     document.getElementById('coldOptions').style.display = "none";
